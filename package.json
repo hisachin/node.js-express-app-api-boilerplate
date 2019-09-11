@@ -1,0 +1,31 @@
+{
+  "name": "backend",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "NODE_PATH=src nodemon --exec babel-node index.js",
+    "build": "babel src --out-dir dist",
+    "serve": "node dist/index.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bcrypt": "^3.0.6",
+    "express": "^4.17.1",
+    "joi": "^14.3.1",
+    "jsonwebtoken": "^8.5.1",
+    "moment": "^2.24.0",
+    "mongoose": "^5.6.10",
+    "winston": "^3.2.1",
+    "winston-daily-rotate-file": "^4.1.0",
+    "winston-mail": "^2.0.0"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.5.5",
+    "@babel/core": "^7.5.5",
+    "@babel/node": "^7.5.5",
+    "@babel/preset-env": "^7.5.5",
+    "nodemon": "^1.19.1"
+  }
+}
